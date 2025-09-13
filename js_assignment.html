@@ -38,56 +38,45 @@
 <p id="spreadOperator"></p>
 
 <script>
-// Simple Assignment
 let x = 10;
 document.getElementById("simpleAssignment").innerHTML = "x = " + x;
 
-// Addition Assignment
 let text = "Hello";
 text += " World";
 document.getElementById("additionAssignment").innerHTML = 'text += " World": ' + text;
 
-// Subtraction Assignment
 let sub = 10;
 sub -= 5;
 document.getElementById("subtractionAssignment").innerHTML = "sub -= 5: " + sub;
 
-// Multiplication Assignment
 let mul = 10;
 mul *= 5;
 document.getElementById("multiplicationAssignment").innerHTML = "mul *= 5: " + mul;
 
-// Division Assignment
 let div = 10;
 div /= 5;
 document.getElementById("divisionAssignment").innerHTML = "div /= 5: " + div;
 
-// Remainder Assignment
 let rem = 10;
 rem %= 6;
 document.getElementById("remainderAssignment").innerHTML = "rem %= 6: " + rem;
 
-// Exponentiation Assignment
 let exp = 2;
-exp **= 3; // 2^3 = 8
+exp **= 3;
 document.getElementById("exponentiationAssignment").innerHTML = "exp **= 3: " + exp;
 
-// Logical AND Assignment
 let andVar = undefined;
 andVar &&= 10;
 document.getElementById("logicalAndAssignment").innerHTML = "andVar &&= 10 (andVar is undefined): " + andVar;
 
-// Logical OR Assignment
 let orVar = false;
 orVar ||= 10;
 document.getElementById("logicalOrAssignment").innerHTML = "orVar ||= 10 (orVar is false): " + orVar;
 
-// Nullish Assignment
 let nullishVar = null;
 nullishVar ??= 10;
 document.getElementById("nullishAssignment").innerHTML = "nullishVar ??= 10 (nullishVar is null): " + nullishVar;
 
-// Spread Operator example
 let nums = "12345";
 let min = Math.min(...nums);
 let max = Math.max(...nums);
